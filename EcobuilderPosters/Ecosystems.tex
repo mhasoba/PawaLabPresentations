@@ -1,0 +1,103 @@
+\documentclass[25pt,margin=20mm, innermargin=15mm]{tikzposter}
+\usepackage[utf8]{inputenc}
+\geometry{paperwidth=100cm,paperheight=100cm}
+% \usetheme{Simple}
+\usecolorstyle[colorPalette=Default]{Australia}
+% \usebackgroundstyle{Empty}
+% \usetitlestyle{Filled}
+\useblockstyle{Basic}
+\tikzposterlatexaffectionproofoff
+
+\usepackage{adjustbox}
+
+\makeatletter %To make columns scale to custom width 
+\setlength{\TP@visibletextwidth}{\textwidth-2\TP@innermargin}
+\setlength{\TP@visibletextheight}{\textheight-2\TP@innermargin}
+\makeatother
+
+\graphicspath{{images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\parbox{\linewidth}{\centering {\bf The Problem}: Ecosystems, a Story of Complexity and Collapse}}
+
+\author{\vspace{20pt} 
+  {\begin{minipage}{9em}
+    \hfill
+    \centering 
+    ecobuildergame.org |
+  \end{minipage}
+  \vspace{-20pt}}
+  {\begin{minipage}{8em}
+    \hfill
+    \centering 
+    \includegraphics[height=2em]{Imperial_Color1.pdf}
+  \end{minipage}
+  \vspace{-20pt}}}
+% \institute{Imperial College London}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	\maketitle{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\block{Ecosystems}{ 
+		\begin{minipage}[]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{Reef.jpg}
+  \end{minipage}
+	\hspace{1cm}
+	\begin{minipage}[]{0.35\linewidth}
+			\begin{itemize} \itemsep20pt \LARGE
+				\item Earth's {\bf Ecosystems} generate the oxygen we breathe and recycle the water we drink.
+				\item {\bf Food-webs}, networks of who-eats-whom interactions, form the living ``fabric" of Ecosystems.
+				\item Ecosystems are {\bf complex systems} that self-organize into a stable environment for {\bf species} to flourish in.
+				\item Ecosystems are under {\bf severe stress} from pollution, species invasions, overexploitation, and climate change.
+			\end{itemize}
+		\end{minipage}
+	\hspace{1cm}
+		\begin{minipage}[]{0.31\linewidth}
+			\includegraphics[width=\textwidth]{lung.png}
+		\end{minipage}
+
+	 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{columns}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \column{0.45}
+    \block{Food webs are the living ``fabric'' of ecosystems}{\centering
+        \includegraphics[width=.92\linewidth]{Foodweb.pdf}}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \column{0.55}
+    \block{Species interactions make food webs complex!}{
+    \includegraphics[width=\linewidth]{Consumer-resource.pdf}
+}
+
+\end{columns}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{columns}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \column{0.64}
+    \block{Ecosystems are under stress globally}{\LARGE
+		\begin{minipage}[]{.455\linewidth}\centering
+				Species invasions \\
+        \includegraphics[width=.96\linewidth]{Kudzu.pdf}		
+        \end{minipage}
+  	\begin{minipage}[]{.545\linewidth}\centering
+        Climate change \\
+        \includegraphics[width=.96\linewidth]{800.jpg}
+    \end{minipage}
+     }
+			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \column{0.36}
+    \block{Ecosystems can and do collapse}{\centering
+    \includegraphics[width=\linewidth]{Paleo.pdf}
+}
+
+\end{columns}
+ 
+
+\end{document}
